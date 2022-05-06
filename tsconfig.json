@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "types": ["node", "jest", "@testing-library/jest-dom", "webpack-env"],
+    "paths": {
+      "~/*": ["./*"],
+      "test-utils": ["./utils/test-utils"]
+    }
+  },
+  "exclude": ["node_modules", "build", "jest"]
+}
